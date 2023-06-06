@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "addresses",
+  "info": {
+    "singularName": "address",
+    "pluralName": "addresses",
+    "displayName": "Address",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "address": {
+      "type": "string",
+      "required": true,
+      "maxLength": 20,
+      "minLength": 2
+    },
+    "owner": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "city": {
+      "type": "string",
+      "required": true,
+      "maxLength": 10,
+      "minLength": 2
+    },
+    "zip": {
+      "type": "biginteger",
+      "required": true,
+      "max": "999999",
+      "min": "0"
+    },
+    "phone": {
+      "type": "biginteger",
+      "max": "99999999999999",
+      "min": "11",
+      "required": true
+    }
+  }
+}
