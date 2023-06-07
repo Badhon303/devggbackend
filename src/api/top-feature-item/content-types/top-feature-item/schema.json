@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "top_feature_items",
+  "info": {
+    "singularName": "top-feature-item",
+    "pluralName": "top-feature-items",
+    "displayName": "Top_Feature_Item",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "maxLength": 20,
+      "minLength": 2,
+      "required": true
+    },
+    "feature_image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

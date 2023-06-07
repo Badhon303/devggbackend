@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "order_items",
+  "collectionName": "top_features",
   "info": {
-    "singularName": "order-item",
-    "pluralName": "order-items",
-    "displayName": "Order_Item",
+    "singularName": "top-feature",
+    "pluralName": "top-features",
+    "displayName": "Top_Feature",
     "description": ""
   },
   "options": {
@@ -12,19 +12,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "quantity": {
-      "type": "integer"
-    },
     "product": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::product.product"
     },
-    "order": {
+    "top_feature_items": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::order.order",
-      "inversedBy": "order_items"
+      "relation": "oneToMany",
+      "target": "api::top-feature-item.top-feature-item"
     }
   }
 }

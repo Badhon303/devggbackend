@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "delivery_traces",
+  "info": {
+    "singularName": "delivery-trace",
+    "pluralName": "delivery-traces",
+    "displayName": "Delivery_Trace"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "order": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::order.order"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "top_products",
+  "info": {
+    "singularName": "top-product",
+    "pluralName": "top-products",
+    "displayName": "Top_Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "position": {
+      "type": "integer",
+      "max": 50,
+      "unique": true,
+      "required": true,
+      "min": 0
+    },
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    }
+  }
+}
