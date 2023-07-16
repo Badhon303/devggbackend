@@ -4,7 +4,8 @@
   "info": {
     "singularName": "delivery-trace",
     "pluralName": "delivery-traces",
-    "displayName": "Delivery_Trace"
+    "displayName": "Delivery_Status",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
